@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500&family=Heebo:wght@100;200;300;400;500&family=Inter:wght@100;200;300;400;500&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,500;1,300&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap");
 :root {
   --primary-color: #FFFFFf;
   --secondary-color: #02060E;
@@ -7,8 +8,7 @@
   --horizontal-line: #AAAAAA;
   --non-highlight: #FFFFFFB2;
   --background-color: #AB5D00;
-  --image-border: #C4C4C4;
-  --bg-color:#AB5D0005;
+  --bg-color: #AB5D0005;
 }
 
 * {
@@ -37,12 +37,12 @@ h6 {
 
 .body {
   font-family: "Mulish", sans-serif;
-  font-size: 16px;
   line-height: 1.5;
   background-color: var(--primary-color);
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -60,7 +60,8 @@ ul, li {
   padding: 16px 0;
   border-bottom: 1px solid var(--horizontal-line);
 }
-.site-header .top-header .social-icons, .site-header .top-header .contact-info {
+.site-header .top-header .social-icons,
+.site-header .top-header .contact-info {
   display: flex;
   gap: 15px;
 }
@@ -106,9 +107,20 @@ ul, li {
 }
 .banner-section .banner-content h1 {
   color: #FFF;
+  font-size: 88px;
 }
 .banner-section .banner-content p {
   color: rgba(255, 255, 255, 0.6980392157);
+}
+
+/*  Intro Section  */
+h2 {
+  font-size: 56px;
+}
+
+p {
+  color: var(--font-color);
+  font-size: 22px;
 }
 
 section {
@@ -116,9 +128,13 @@ section {
   padding: 0 80px;
 }
 
-.section-content img {
-  transform: translateY(5%) rotate(4deg);
-  border: 5px solid var(--image-border);
+.section-content {
+  padding-top: 100px;
+}
+
+#losinfo {
+  color: #333333;
+  font-size: 16px;
 }
 
 .introduction {
@@ -127,37 +143,29 @@ section {
   font-family: "Mulish", sans-serif;
   color: var(--font-color);
 }
+.introduction h2 {
+  padding-top: 8px;
+}
+.introduction p {
+  padding: 16px 16px 0 0;
+}
+.introduction .para-two {
+  padding-bottom: 48px;
+}
+.introduction .count {
+  display: flex;
+  gap: 70px;
+}
+.introduction .count-items {
+  color: var(--btn-color);
+  font-size: 64px;
+}
 
-section span, .spirit, .skill {
+.title {
   font-family: "Mulish", sans-serif;
   color: var(--btn-color);
   font-size: 16px;
   font-style: italic;
-}
-
-section h2 {
-  color: var(--secondary-color);
-  padding-top: 15px;
-}
-
-.introduction .para-one, .introduction .para-two {
-  padding-top: 15px;
-}
-
-.introduction .title {
-  color: var(--secondary-color);
-  font-size: 16px;
-}
-
-.count {
-  display: flex;
-  gap: 25px;
-  padding-top: 20px;
-}
-
-.count-items {
-  color: var(--btn-color);
-  font-size: 40px;
 }
 
 .section-content {
@@ -166,53 +174,151 @@ section h2 {
   padding-bottom: 50px;
 }
 
+/* Inspire Section */
 .section-description {
   padding: 60px 0px;
   display: flex;
   gap: 50px;
   background-color: var(--bg-color);
 }
-
-.section-description img {
-  transform: translateY(5%) rotate(-5deg);
-  border: 5px solid var(--primary-color);
-}
-
-section .note {
-  font-size: 22px;
-  color: var(--font-color);
-  padding-top: 15px;
+.section-description p {
+  padding-top: 16px;
   font-family: "Mulish", sans-serif;
-}
-
-.section-description .para-one, .section-description .para-two {
-  padding-top: 15px;
-  font-size: 16px;
-  color: #333333;
 }
 
 button {
   color: var(--primary-color);
   background-color: var(--btn-color);
-  padding: 10px;
+  padding: 16px 36px;
   border: none;
 }
 
 .btn {
-  padding-top: 20px;
+  padding-top: 48px;
 }
 
+/* Hero-Section*/
 .hero-section {
   display: flex;
-  padding: 50px 0px;
+  padding: 100px 0px;
   justify-content: space-between;
 }
-
-.range-items {
+.hero-section expert {
+  flex: 1;
+}
+.hero-section .range-items {
   display: flex;
   justify-content: space-between;
 }
+.hero-section .range-items .slider-container {
+  padding: 24px 0 48px 0;
+}
 
-.range-items .percent {
+/* Feature-Section */
+.featured-on {
+  background-color: var(--bg-color);
+}
+.featured-on .feature-content {
+  padding: 100px 0px 80px;
+  text-align: center;
+}
+.featured-on .feature-items {
+  padding-bottom: 100px;
+  text-align: evenly;
+}
+.featured-on .feature-items img {
+  height: 40px;
+  width: 115px;
+}
+
+/* Banner-Section2 */
+.banner-section2 .contact button {
+  background-color: none;
+  border: #FFF;
+}
+
+/* Image-Collection Section */
+.img-section {
+  padding: 100px 0px 80px;
+}
+.img-section .content {
+  text-align: center;
+}
+.img-section .content p .title {
+  padding-bottom: 8px;
+}
+.img-section .content h2 {
+  padding-bottom: 16px;
+}
+.img-section .img-collection {
+  padding-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Footer-Section css*/
+.footer .policies {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .policies p {
+  font-size: 16px;
   color: var(--font-color);
+  font-family: "Mulish", sans-serif;
+}
+.footer .policies .terms {
+  display: flex;
+  gap: 56px;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--horizontal-line);
+  padding-bottom: 80px;
+}
+.footer .footer-content h2 {
+  font-weight: bold;
+}
+.footer .footer-content p {
+  color: #02060E;
+}
+.footer .footer-content .footer-description {
+  flex: 1;
+}
+.footer .footer-content .footer-link {
+  flex: 1;
+  font-size: 18px;
+  font-family: "Mulish";
+}
+.footer .footer-content .footer-link ul {
+  padding-top: 24px;
+}
+.footer .footer-content .footer-link li {
+  padding-bottom: 16px;
+}
+.footer .footer-content .footer-link a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+.footer .footer-content .footer-services {
+  flex: 1;
+  font-size: 18px;
+  font-family: "Mulish";
+}
+.footer .footer-content .footer-services ul {
+  padding-top: 24px;
+  color: var(--font-color);
+}
+.footer .footer-content .footer-services li {
+  padding-bottom: 16px;
+}
+.footer .footer-content .footer-icons {
+  flex: 1;
+}
+.footer .footer-content .footer-icons .social-icons {
+  display: flex;
+  gap: 10px;
+  padding-top: 24px;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
