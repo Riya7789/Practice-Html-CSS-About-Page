@@ -100,26 +100,26 @@
                     <p class="note">I am a professional photographer. I particularly have specialise in contemporary landscape and portrait photography over 5 years of experience</p>
                 </div>
                 <div class="range-menu">
-                    <div class="range-items">
+                    <div class="field-group">
                         <p>Photoshop</p>
                         <p class="percent">92%</p>
                     </div>
-                        <div class="slidecontainer">
-                            <input type="range" min="1" max="100" value="92" class="slider" id="myRange">
-                        </div>
-                    <div class="range-items">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="92" class="range-field" id="range">
+                    </div>
+                    <div class="field-group">
                         <p>Adobe Lightroom</p>
                         <p>92%</p>
                     </div>
                         <div class="slidecontainer">
-                            <input type="range" min="1" max="100" class="slider" id="myRange">
+                            <input type="range" min="1" max="100" class="range-field" id="range">
                     </div>
-                    <div class="range-items">
+                    <div class="field-group">
                         <p>Adobe After Effects</p>
                         <p>92%</p>
                     </div>
                     <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="72" class="slider" id="myRange">
+                        <input type="range" min="1" max="100" value="72" class="range-field" id="range">
                     </div>
                 </div>
             </div>
@@ -128,17 +128,26 @@
         <!-- Feature Section -->
         <section class="featured-on">
             <div class="container">
-
                 <div class="feature-content">
                     <p class="title">FEATURING ME</p>
                     <h2>Works Featured On</h2>
                 </div>
-                <div class="feature-items">
-                <img src="images/work-on/logo-3 1.png" alt="Vision">
-                <img src="images/work-on/logo-1 1.png" alt="Flow">
-                <img src="images/work-on/logo-6 1.png" alt="Xtraxt">
-                <img src="images/work-on/image.png" alt="Holiday">
-                <img src="images/work-on/logo-2 1.png" alt="CodeMantra">
+                <div class="feature-collection">
+                    <div class="feature-items">
+                        <img src="images/work-on/logo-3 1.png" alt="Vision">
+                    </div>
+                    <div class="feature-items">
+                        <img src="images/work-on/logo-1 1.png" alt="Flow">
+                    </div>
+                    <div class="feature-items">
+                        <img src="images/work-on/logo-6 1.png" alt="Xtraxt">
+                    </div>
+                    <div class="feature-items">
+                        <img src="images/work-on/image.png" alt="Holiday">
+                    </div>
+                    <div class="feature-items">
+                        <img src="images/work-on/logo-2 1.png" alt="CodeMantra">
+                    </div>
             </div>
         </div>
 
@@ -147,12 +156,17 @@
         <!-- Banner Section -->
         <section class="banner-section2">
             <div class="container">
-                <!-- <img src="images/Group 9724.png" alt="Hire Me"> -->
-                <h2>Hire Me For Your Next Photoshoot ?</h2>
-                <p>I am a professional photographer. I particularly specialise in contemporary and landscape and portrait photography. I asure you with results</p>
-            <div class="contact">
-                <button>CONTACT ME</button>
-            </div>
+                <div class="content">
+                    <div class="contact">
+                        <h2>Hire Me For Your Next Photoshoot ?</h2>
+                        <p>I am a professional photographer. I particularly specialise in contemporary and landscape and portrait photography. I assure you with results</p>
+                    </div>
+                    <div class="btn">
+                        <!-- <button> -->
+                            <a href="#">CONTACT ME</a>
+                        <!-- </button> -->
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -179,13 +193,13 @@
             <div class="container">
                 <div class="footer-content">
                         <div class="footer-description">
-                            <p>Photography</p>
+                            <h3>Photography</h3>
                             <p class="losinfo">To me, photography is about making sense of the world. And Photography is about finding appreciation in the small things in life. Photography is about walking slower</p>                        
-                            <p><img src="images/Social Media Icons/Subtract.png" alt="mail">email@companyname.com</p>
+                            <p class="contact"><img src="images/Social Media Icons/Subtract.png" alt="mail">email@companyname.com</p>
                             <p><img src="images/Social Media Icons/phone.png" alt="phone">(+12) 123 456 7890</p>
                         </div>
                         <div class="footer-link">
-                            <p>Quick Links</p>
+                            <p class="row">Quick Links</p>
                             <ul>
                                 <li><a href="#">About Me</a></li>
                                 <li><a href="#">Services</a></li>
@@ -194,7 +208,7 @@
                             </ul>
                         </div>
                         <div class="footer-services">
-                            <p>Services</h>
+                            <p class="row">Services</p>
                             <ul>
                                 <li>Potraits</li>
                                 <li>Retouching</li>
@@ -204,13 +218,23 @@
                             </ul>
                         </div>
                         <div class="footer-icons">
-                            <p>Social Media</p>
+                            <p class="row">Social Media</p>
                             <div class="social-icons">
-                                <a href="#"><img src="images/Social Media Icons/facebook-f.png" alt="facebook"></a>
-                                <a href="#"><img src="images/Social Media Icons/twitter.png" alt="twitter"></a>
-                                <a href="#"><img src="images/Social Media Icons/linkedin.png" alt="linkedin"></a>
-                                <a href="#"><img src="images/Social Media Icons/youtube.png" alt="youtube"></a>
-                                <a href="#"><img src="images/Social Media Icons/instagram.png" alt="instagram"></a>
+                                <div class="social-items">
+                                    <a href="#"><img src="images/Social Media Icons/facebook-f.png" alt="facebook"></a>
+                                </div>
+                                <div class="social-items">
+                                    <a href="#"><img src="images/Social Media Icons/twitter.png" alt="twitter"></a>
+                                </div>
+                                <div class="social-items">
+                                    <a href="#"><img src="images/Social Media Icons/linkedin.png" alt="linkedin"></a>
+                                </div>
+                                <div class="social-items">
+                                    <a href="#"><img src="images/Social Media Icons/youtube.png" alt="youtube"></a>
+                                </div>
+                                <div class="social-items">
+                                    <a href="#"><img src="images/Social Media Icons/instagram.png" alt="instagram"></a>
+                                </div>
                             </div>
                         </div>
                 </div>

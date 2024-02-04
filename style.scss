@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 :root{
     --primary-color: #FFFFFf;
     --secondary-color: #02060E;
@@ -39,7 +38,7 @@ h6{
 
 .body{
     font-family: 'Mulish', sans-serif;
-    // font-size: 16px;
+    font-size: 16px;
     line-height: 1.5;
     background-color: var(--primary-color);
 }
@@ -80,7 +79,10 @@ li{
         .nav-menu{
             display: flex;
             gap: 56px;
-
+            li{
+                font-family: 'Mulish';
+                font-size: 16px;
+            }
             a{
                 color: var(--non-highlight);
                 text-decoration: none;
@@ -124,6 +126,7 @@ li{
 
         p{
             color: #FFFFFFB2;
+            font-family: 'Mulish';
         }
     }
 }
@@ -231,11 +234,16 @@ button{
     expert{
         flex: 1;
     }
-    .range-items{
+    .field-group{
         display: flex;
         justify-content: space-between;
-        .slider-container{
-            padding: 24px 0 48px 0;
+        .slider{
+            // padding: 24px 0 48px 0;
+            -webkit-appearance: none;
+            outline: none;
+            width: 555px;
+            height: 6px;
+            background-color: var(--btn-color);
         }
     }
 }
@@ -247,12 +255,13 @@ button{
         padding: 100px 0px 80px;
         text-align: center;
     }
-    .feature-items{
+    .feature-collection{
         padding-bottom: 100px;
-        text-align: evenly;
-        img{
-            height: 40px;
-            width: 115px;
+        display: flex;
+        gap: 88px;
+        .feature-items{
+
+            display: inline-block;
         }
     }
 }
@@ -261,10 +270,30 @@ button{
 /* Banner-Section2 */
 
 .banner-section2{
-    .contact{
-        button{
-            background-color: none;
-            border: #FFF;
+    background-image: url("images/Group\ 9724.png");
+    padding: 120px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    h2{
+        color: #FFF;
+        padding-bottom: 16px;
+        text-align: left;
+    }
+    p{
+        color:#FFFFFFB2;
+        font-family: 'Mulish';
+        text-align: left;
+    }
+    .content{
+        display: flex;
+        gap: 110px;
+        .btn{
+            border: 1px solid #FFF;
+            padding: 16px 36px;
+            a{
+                color: #FFF;
+            }
         }
     }
 }
@@ -288,7 +317,9 @@ button{
         .img-collection{
             padding-top: 56px;
             display: flex;
-            flex-wrap: wrap;
+            img{
+                width: 25%;
+            }
         }
     }
 
@@ -319,13 +350,35 @@ button{
             font-weight: bold;
         }
 
-            p{
+        p{
+            font-size: 16px;
+            font-family: 'Mulish';
+            text-align: left;
+            }
+
+        // li{
+        //     text-align: left;
+        //     padding-left: 84px;
+        // }
+            .row{
+                font-size: 22px;
+                font-family: 'Mulish',sans-serif;
                 color: #02060E;
-                ;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .contact{
+                padding: 24px 0px 14px;
             }
 
             .footer-description{
                 flex: 1;
+                h3{
+                    font-size: 32px;
+                    font-family: 'Cormorant';
+                    padding-bottom: 23px;
+                }
             }
 
             .footer-link{
@@ -364,6 +417,13 @@ button{
                     gap: 10px;
                     padding-top: 24px;
                     justify-content: center;
+                    .social-items{
+                        background-color: #AAAAAA1A;
+                        padding: 12px;
+                        &:hover{
+                            background-color: var(--btn-color);
+                        }
+                    }
                 }
             }
         }
