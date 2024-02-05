@@ -237,6 +237,7 @@ button{
     background-color: var(--btn-color);
     padding: 16px 36px;
     border: none;
+    font-family: 'Mulish',sans-serif;
 }
 
 .btn{
@@ -414,6 +415,8 @@ button{
                 font-family: 'Mulish';
                 ul{
                     padding-top: 24px;
+                    text-align: left;
+                    padding-left: 73px;
                 }
                 li{
                     padding-bottom: 16px;
@@ -431,6 +434,8 @@ button{
                 ul{
                     padding-top: 24px;
                     color: var(--font-color);
+                    text-align: left;
+                    padding-left: 87px;
                 }
                 li{
                     padding-bottom: 16px;
@@ -442,6 +447,7 @@ button{
                     gap: 10px;
                     padding-top: 24px;
                     justify-content: center;
+                    padding-left: 127px;
                     .social-icons{
                         background-color: #AAAAAA1A;
                         padding: 12px;

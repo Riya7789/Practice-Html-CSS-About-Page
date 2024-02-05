@@ -215,6 +215,7 @@ button {
   background-color: var(--btn-color);
   padding: 16px 36px;
   border: none;
+  font-family: "Mulish", sans-serif;
 }
 
 .btn {
@@ -375,6 +376,8 @@ button {
 }
 .footer .footer-content .footer-link ul {
   padding-top: 24px;
+  text-align: left;
+  padding-left: 73px;
 }
 .footer .footer-content .footer-link li {
   padding-bottom: 16px;
@@ -391,6 +394,8 @@ button {
 .footer .footer-content .footer-services ul {
   padding-top: 24px;
   color: var(--font-color);
+  text-align: left;
+  padding-left: 87px;
 }
 .footer .footer-content .footer-services li {
   padding-bottom: 16px;
@@ -400,6 +405,7 @@ button {
   gap: 10px;
   padding-top: 24px;
   justify-content: center;
+  padding-left: 127px;
 }
 .footer .footer-content .footer-icons .social-links .social-icons {
   background-color: rgba(170, 170, 170, 0.1019607843);
