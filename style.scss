@@ -250,21 +250,36 @@ button{
     display: flex;
     padding: 100px 0px;
     justify-content: space-between;
-    .field-group{
-        display: flex;
-        gap: 426px;
-        p{
-            font-size: 18px;
+    .range-menu{
+        .field-group{
+            display: flex;
+            gap: 426px;
+            p{
+                font-size: 18px;
+            }
         }
         .slide-container{
-            position: relative;
-            text-align: center;
+            width: 100%;
             .slider{
                 -webkit-appearance: none;
+                width: 100%;
+                height: 8px;
+                background-color: #DDDDDD;
                 outline: none;
-                width: 555px;
-                height: 6px;
-                background-color: var(--btn-color);
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                &:hover{
+                    opacity: 1;
+                }
+                &::-webkit-slider-thumb{
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 9px;
+                    height: 8px;
+                    background: var(--btn-color);
+                    cursor: pointer;
+                }
             }
         }
     }
