@@ -33,7 +33,7 @@ h6{
 
 
 .container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -67,6 +67,7 @@ a{
     .top-header{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 16px 0;
         border-bottom: 1px solid var(--horizontal-line);
 
@@ -78,8 +79,17 @@ a{
                 font-size: 14px;
                 color: var(--non-highlight);
             }
-            a:hover{
-                background-color: var(--primary-color);
+            .email, .phone{
+                display:flex;
+                align-items: center;
+                gap: 8px;
+            }
+            a{
+                text-decoration: none;
+                color: var(--non-highlight);
+                &:hover{
+                    color: #FFF;
+                }
             }
         }
     }
@@ -92,6 +102,7 @@ a{
         .nav-menu{
             display: flex;
             gap: 56px;
+            align-items: center;
             a{
                 color: var(--non-highlight);
                 text-decoration: none;
@@ -132,10 +143,12 @@ a{
             color: #FFF;
             font-size: 88px;
         }
-
+        
         p{
+            margin: 0 auto;
             color: #FFFFFFB2;
             font-size: var(--base-font-xl);
+            max-width: 792px;
         }
     }
 }
@@ -214,11 +227,15 @@ h2{
         }
     }
     
-    button{
+    a{
         color: #FFF;
         background-color: var(--primary-color);
         padding: 16px 36px;
         border: none;
+        text-decoration: none;
+        &:hover{
+            background-color: var(--font-color);
+        }
     }
     
     .btn{
@@ -231,18 +248,22 @@ h2{
 .hero-section{
     .hero-content{
         display: flex;
+        justify-content: space-between;
+        gap:30px;
         padding: 100px 0px;
-        .expertise{
-            padding-top: 16px;
-            max-width: 70%;
-            font-size: var(--base-font-xl);
-            color: var(--font-color);
+        .expert{
+            flex: 1;
+            .expertise{
+                padding-top: 16px;
+                font-size: var(--base-font-xl);
+                color: var(--font-color);
+            }
         }
         .range-menu{
             flex: 1;
             .skills{
                 display: flex;
-                gap: 200px;
+                justify-content: space-between;
                 p{
                     font-size: 18px;
                     padding: 24px 0px 15px;
@@ -343,6 +364,8 @@ h2{
     position: relative;
     .content{
         display: flex;
+        align-items: center;
+        gap:110px;
         .contact{
             flex: 1;
             h2{
@@ -355,13 +378,15 @@ h2{
                 font-size: var(--base-font-xl);
             }
         }
-        button{
-            border: 1px solid #FFF;
+        a{
+            color: #FFF;
             background-color: transparent;
             padding: 16px 36px;
-            a {
-                color: #FFF;
-                text-decoration: none;
+            border: none;
+            text-decoration: none;
+            border: 1px solid #FFF;
+            &:hover{
+                background-color: var(--primary-color);
             }
         }
     }
@@ -401,6 +426,9 @@ h2{
         color: var(--font-color);
         text-decoration: none;
         text-transform: capitalize;
+        &:hover{
+            color: var(--primary-color);
+        }
     }
     .policies{
         padding: 24px 0;
